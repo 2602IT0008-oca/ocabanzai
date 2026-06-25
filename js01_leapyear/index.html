@@ -26,7 +26,10 @@
         }
 
         const calc_leap = (year) => {
-            if (yNum == 2000) {
+            const yNum = Number(year)
+            const year = 2020
+            
+            if (yNum % 400 == 0 || (year % 4 === 0 && year % 100 !== 0)) {
                 return true;
             } else {
                 return false;
