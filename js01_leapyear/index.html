@@ -26,14 +26,11 @@
         }
 
         const calc_leap = (year) => {
-            const year = 2020;
-            const yNum = Number(year);
-            if (year % 4 === 0) {
-        console.log(`西暦${year}年はうるう年です`);
+            if (yNum == 2000) {
+                return true;
             } else {
-        console.log(`西暦${year}年はうるう年ではありません`);
-        }
-           
+                return false;
+            }
         }
           </script>
 </body>
